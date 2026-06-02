@@ -3,13 +3,82 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>geoemez — боты, сайты и приложения для вашего бизнеса под ключ</title>
+<title>Разработка Telegram-ботов, сайтов и приложений в Караганде и Темиртау | geoemez</title>
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="logo.png">
-<meta name="description" content="Создаю чат-ботов, сайты и мобильные приложения, которые приводят клиентов и экономят ваше время. Объясняю простым языком, делаю под ключ. Георгий, Карагандинская область.">
 
-<!-- ВАШ ПРАЙС: цены на услугах помечены «по договорённости» — замените, найдя .svc-price -->
-<!-- КОНТАКТЫ: Telegram и email — плейсхолдеры, замените @your_telegram и mail@example.com -->
+<!-- SEO -->
+<meta name="description" content="Заказать чат-бота (Telegram, WhatsApp), сайт или мобильное приложение под ключ в Караганде и Темиртау. Автоматизация бизнеса, разработка от 15 000 ₸. Делаю сам, объясняю простым языком. Георгий — фрилансер, Карагандинская область.">
+<meta name="keywords" content="разработка ботов Караганда, телеграм бот Караганда, заказать бота Темиртау, создание сайта Караганда, разработка сайта Темиртау, мобильное приложение Караганда, чат-бот WhatsApp Казахстан, автоматизация бизнеса Караганда, фрилансер программист Караганда, веб-разработчик Темиртау, заказать телеграм бота Казахстан, сайт под ключ Караганда">
+<meta name="author" content="Георгий (geoemez)">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://georgiy-mez.github.io/site_visit/">
+
+<!-- Гео -->
+<meta name="geo.region" content="KZ-KAR">
+<meta name="geo.placename" content="Караганда, Темиртау">
+
+<!-- Open Graph (для соцсетей и мессенджеров) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="geoemez">
+<meta property="og:title" content="Разработка ботов, сайтов и приложений под ключ | Караганда, Темиртау">
+<meta property="og:description" content="Чат-боты (Telegram, WhatsApp), сайты и мобильные приложения для бизнеса. Делаю сам, под ключ, объясняю простым языком. От 15 000 ₸.">
+<meta property="og:url" content="https://georgiy-mez.github.io/site_visit/">
+<meta property="og:image" content="https://georgiy-mez.github.io/site_visit/logo.png">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Разработка ботов, сайтов и приложений под ключ | Караганда, Темиртау">
+<meta name="twitter:description" content="Чат-боты, сайты и мобильные приложения для бизнеса. Под ключ, от 15 000 ₸.">
+<meta name="twitter:image" content="https://georgiy-mez.github.io/site_visit/logo.png">
+
+<!-- Микроразметка Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "geoemez — разработка ботов, сайтов и приложений",
+  "description": "Разработка чат-ботов (Telegram, WhatsApp), сайтов и мобильных приложений под ключ. Автоматизация бизнеса.",
+  "url": "https://georgiy-mez.github.io/site_visit/",
+  "image": "https://georgiy-mez.github.io/site_visit/logo.png",
+  "priceRange": "от 15 000 ₸",
+  "areaServed": [
+    { "@type": "City", "name": "Караганда" },
+    { "@type": "City", "name": "Темиртау" },
+    { "@type": "Country", "name": "Казахстан" }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "Карагандинская область",
+    "addressCountry": "KZ"
+  },
+  "founder": { "@type": "Person", "name": "Георгий" },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer service",
+    "telephone": "+77478051201",
+    "availableLanguage": ["Russian", "Kazakh"]
+  },
+  "sameAs": [
+    "https://t.me/Variag_GM",
+    "https://wa.me/77478051201",
+    "https://kwork.ru/user/geoemez",
+    "https://www.instagram.com/geoemez_offical/"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Услуги",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Разработка чат-ботов (Telegram, WhatsApp)" }, "price": "20000", "priceCurrency": "KZT" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Разработка сайтов под ключ" }, "price": "40000", "priceCurrency": "KZT" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Мобильные приложения" }, "price": "100000", "priceCurrency": "KZT" },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Автоматизация бизнеса" }, "price": "15000", "priceCurrency": "KZT" }
+    ]
+  }
+}
+</script>
+
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -653,7 +722,8 @@
       if (!swiping) return; swiping = false;
       const dx = e.changedTouches[0].clientX - sx;
       const dy = e.changedTouches[0].clientY - sy;
-      if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) { go(dx < 0 ? idx+1 : idx-1); }
+      // листаем только при явно горизонтальном жесте: вбок > 60px И вбок заметно больше, чем вверх-вниз
+      if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.8) { go(dx < 0 ? idx+1 : idx-1); }
       reset();
     }, {passive:true});
     go(0); reset();
