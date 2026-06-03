@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://georgiy-mez.github.io/site_visit/sitemap.xml
+Sitemap: https://geoemez.online/sitemap.xml
