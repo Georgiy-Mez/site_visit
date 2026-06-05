@@ -112,20 +112,20 @@
 
 <style>
   :root{
-    --bg:#0a0b0d; --bg-2:#0e1014; --surface:#14171c; --surface-2:#191d24;
-    --border:#242931; --border-soft:#1c2128;
-    --text:#eef1f4; --muted:#9aa2ad; --faint:#646c78;
-    --accent:#c8f23d; --accent-dim:#a9d12b; --accent-deep:#7d9c12;
-    --glow:rgba(200,242,61,.13);
+    --bg:#13161b; --bg-2:#171b21; --surface:#1c2128; --surface-2:#232a33;
+    --border:#2d343e; --border-soft:#20262e;
+    --text:#e7eaee; --muted:#98a1ac; --faint:#6a727c;
+    --accent:#6a9fd4; --accent-dim:#5688c4; --accent-deep:#3f6491;
+    --glow:rgba(106,159,212,.11);
     --maxw:1180px; --r:18px;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth;overflow-x:hidden;width:100%}
   body{background:var(--bg);color:var(--text);font-family:'Onest',system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;width:100%;max-width:100%;position:relative}
   a{color:inherit;text-decoration:none}
-  ::selection{background:var(--accent);color:#0a0b0d}
+  ::selection{background:var(--accent);color:#13161b}
 
-  body::before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(900px 500px at 78% -8%,rgba(200,242,61,.10),transparent 60%),radial-gradient(700px 600px at 8% 12%,rgba(90,120,255,.06),transparent 55%);pointer-events:none}
+  body::before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(900px 500px at 78% -8%,rgba(106,159,212,.10),transparent 60%),radial-gradient(700px 600px at 8% 12%,rgba(90,120,255,.06),transparent 55%);pointer-events:none}
   body::after{content:"";position:fixed;inset:0;z-index:-1;opacity:.5;background-image:linear-gradient(var(--border-soft) 1px,transparent 1px),linear-gradient(90deg,var(--border-soft) 1px,transparent 1px);background-size:64px 64px;-webkit-mask-image:radial-gradient(ellipse 100% 70% at 50% 0%,#000 30%,transparent 75%);mask-image:radial-gradient(ellipse 100% 70% at 50% 0%,#000 30%,transparent 75%);pointer-events:none}
 
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
@@ -145,7 +145,7 @@
   .nav-links a:not(.btn)::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;background:var(--accent);transition:width .25s}
   .nav-links a:not(.btn):hover::after{width:100%}
   .btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;border-radius:999px;padding:11px 22px;border:1px solid var(--border);transition:transform .15s,background .2s,border-color .2s,color .2s;cursor:pointer}
-  .btn-primary{background:var(--accent);color:#0a0b0d;border-color:var(--accent)}
+  .btn-primary{background:var(--accent);color:#13161b;border-color:var(--accent)}
   .btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 30px var(--glow)}
   .btn-ghost{background:transparent;color:var(--text)}
   .btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
@@ -157,7 +157,7 @@
   .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:54px;align-items:center}
   .tag{display:inline-flex;align-items:center;gap:9px;font-size:13px;color:var(--accent);border:1px solid var(--border);border-radius:999px;padding:7px 15px;background:var(--surface);letter-spacing:.2px}
   .tag .pulse{width:7px;height:7px;border-radius:50%;background:var(--accent);animation:pulse 2s infinite}
-  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(200,242,61,.5)}70%{box-shadow:0 0 0 9px rgba(200,242,61,0)}100%{box-shadow:0 0 0 0 rgba(200,242,61,0)}}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(106,159,212,.5)}70%{box-shadow:0 0 0 9px rgba(106,159,212,0)}100%{box-shadow:0 0 0 0 rgba(106,159,212,0)}}
   h1{font-family:'Unbounded';font-weight:800;line-height:1.05;letter-spacing:-1.3px;font-size:clamp(34px,4.8vw,60px);margin:22px 0 0}
   h1 .hl{color:var(--accent)}
   .hero p.lead{font-size:clamp(16px,1.5vw,19px);color:var(--muted);max-width:520px;margin:22px 0 32px}
@@ -199,7 +199,7 @@
   .about-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:54px;align-items:center}
   .about-photo{position:relative;display:flex;justify-content:center}
   .about-photo::before{content:"";position:absolute;left:50%;top:48%;width:125%;height:120%;transform:translate(-50%,-50%);background:radial-gradient(closest-side,var(--glow),transparent 70%);z-index:0}
-  .about-photo .pic{position:relative;z-index:1;width:100%;max-width:360px;border-radius:22px;overflow:hidden;border:1px solid var(--border);background:linear-gradient(180deg,#15181e 0%,#0b0d11 100%);box-shadow:0 26px 70px rgba(0,0,0,.5)}
+  .about-photo .pic{position:relative;z-index:1;width:100%;max-width:360px;border-radius:22px;overflow:hidden;border:1px solid var(--border);background:linear-gradient(180deg,#222a33 0%,#171b21 100%);box-shadow:0 26px 70px rgba(0,0,0,.5)}
   .about-photo .pic::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,13,17,.55) 0%,transparent 22%,transparent 78%,rgba(11,13,17,.85) 100%);pointer-events:none}
   .about-photo .pic img{display:block;width:100%}
   .about-text h2{margin:14px 0 0}
@@ -227,7 +227,7 @@
   .case-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;align-items:stretch}
   .case{height:100%;background:linear-gradient(180deg,var(--surface),var(--bg-2));border:1px solid var(--border);border-radius:var(--r);overflow:hidden;transition:transform .25s,border-color .25s;display:flex;flex-direction:column}
   .case:hover{transform:translateY(-5px);border-color:var(--accent-deep)}
-  .case-shot{position:relative;width:100%;aspect-ratio:1889/860;border-bottom:1px solid var(--border);overflow:hidden;background:linear-gradient(135deg,#16191f,#0c0e12)}
+  .case-shot{position:relative;width:100%;aspect-ratio:1889/860;border-bottom:1px solid var(--border);overflow:hidden;background:linear-gradient(135deg,#1c2128,#171b21)}
   .case-shot > img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;cursor:zoom-in}
   .case-shot .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;color:var(--faint)}
   .case-shot .ph svg{opacity:.45}
@@ -239,7 +239,7 @@
   .carousel-track .slide img{width:100%;height:100%;object-fit:cover;object-position:top;cursor:zoom-in}
   .car-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:34px;height:34px;border-radius:50%;border:1px solid var(--border);background:rgba(10,11,13,.7);backdrop-filter:blur(6px);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;transition:opacity .2s,background .2s}
   .case-shot:hover .car-btn{opacity:1}
-  .car-btn:hover{background:var(--accent);color:#0a0b0d;border-color:var(--accent)}
+  .car-btn:hover{background:var(--accent);color:#13161b;border-color:var(--accent)}
   .car-btn.prev{left:10px}.car-btn.next{right:10px}
   .car-dots{position:absolute;left:0;right:0;bottom:10px;z-index:3;display:flex;gap:6px;justify-content:center}
   .car-dots button{width:7px;height:7px;border-radius:50%;border:none;background:rgba(255,255,255,.35);cursor:pointer;padding:0;transition:background .2s,width .2s}
@@ -262,7 +262,7 @@
   .rev-shot .carousel-track{height:100%}
   .rev-shot .carousel-track .slide{display:flex;align-items:center;justify-content:center;background:#f4f6f8;padding:24px 56px}
   .rev-shot .carousel-track .slide img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;cursor:zoom-in;border-radius:6px}
-  .rev-shot .car-btn{opacity:0;color:#0a0b0d;background:rgba(255,255,255,.85);border-color:#d4d9df}
+  .rev-shot .car-btn{opacity:0;color:#13161b;background:rgba(255,255,255,.85);border-color:#d4d9df}
   .rev-shot:hover .car-btn{opacity:1}
   .rev-shot .car-btn:hover{background:var(--accent);border-color:var(--accent)}
   .rev-shot .car-dots{bottom:12px}
@@ -310,9 +310,9 @@
   .lightbox img{max-width:92vw;max-height:86vh;border-radius:12px;border:1px solid var(--border);box-shadow:0 30px 90px rgba(0,0,0,.6);transform:scale(.96);transition:transform .25s}
   .lightbox.open img{transform:scale(1)}
   .lb-close{position:absolute;top:20px;right:24px;width:44px;height:44px;border-radius:50%;border:1px solid var(--border);background:rgba(20,23,28,.8);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:.2s}
-  .lb-close:hover{background:var(--accent);color:#0a0b0d;border-color:var(--accent)}
+  .lb-close:hover{background:var(--accent);color:#13161b;border-color:var(--accent)}
   .lb-btn{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;border:1px solid var(--border);background:rgba(20,23,28,.8);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:.2s}
-  .lb-btn:hover{background:var(--accent);color:#0a0b0d;border-color:var(--accent)}
+  .lb-btn:hover{background:var(--accent);color:#13161b;border-color:var(--accent)}
   .lb-btn.prev{left:20px}.lb-btn.next{right:20px}
   .lb-count{position:absolute;bottom:22px;left:0;right:0;text-align:center;font-family:'JetBrains Mono';font-size:13px;color:var(--muted)}
   @media(max-width:720px){.lb-btn{width:40px;height:40px}.lb-btn.prev{left:10px}.lb-btn.next{right:10px}}
@@ -328,7 +328,7 @@
     .proc-grid{grid-template-columns:repeat(2,1fr)}
   }
   @media(max-width:720px){
-    .nav-links{position:fixed;inset:72px 0 auto;flex-direction:column;background:#0a0b0d;border-bottom:1px solid var(--border);padding:26px 24px 30px;gap:22px;transform:translateY(-130%);transition:transform .35s;z-index:60;box-shadow:0 24px 50px rgba(0,0,0,.7)}
+    .nav-links{position:fixed;inset:72px 0 auto;flex-direction:column;background:#13161b;border-bottom:1px solid var(--border);padding:26px 24px 30px;gap:22px;transform:translateY(-130%);transition:transform .35s;z-index:60;box-shadow:0 24px 50px rgba(0,0,0,.7)}
     .nav-links.open{transform:none}
     .nav-links a{font-size:17px}.nav-links .btn{align-self:center}
     .burger{display:flex}
@@ -347,10 +347,8 @@
     <a href="#top" class="logo"><img src="logo.png" alt="geoemez">geoemez</a>
     <nav class="nav-links" id="navLinks">
       <a href="#services">Услуги</a>
-      <a href="#why">Почему я</a>
       <a href="#cases">Примеры</a>
       <a href="#reviews">Отзывы</a>
-      <a href="#process">Как работаю</a>
       <a href="#contacts" class="btn btn-primary">Оставить заявку</a>
     </nav>
     <div class="burger" id="burger"><span></span><span></span><span></span></div>
@@ -387,23 +385,6 @@
         <div class="l" style="animation-delay:2.7s"><span class="c1">$</span> <span class="cursor"></span></div>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- PROBLEMS -->
-<section id="problems">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="sec-label">узнаёте себя?</span>
-      <h2>Если что-то из этого про вас — вам ко мне</h2>
-    </div>
-    <div class="prob-grid">
-      <div class="prob reveal"><div class="x">✕</div><p>Заявки и вопросы теряются в переписке, звонках и сообщениях.</p></div>
-      <div class="prob reveal"><div class="x">✕</div><p>Половину дня отвечаете клиентам на одни и те же вопросы.</p></div>
-      <div class="prob reveal"><div class="x">✕</div><p>Нет сайта или приложения — и клиенты уходят к тем, у кого они есть.</p></div>
-      <div class="prob reveal"><div class="x">✕</div><p>Всё держится на ручном труде, таблицах и блокнотах.</p></div>
-    </div>
-    <p class="prob-foot reveal">Знакомо? Это <span class="hl">решается</span> — и проще, чем кажется.</p>
   </div>
 </section>
 
@@ -465,54 +446,6 @@
         <div class="svc-price">Стоимость <b>по договорённости</b></div>
       </div>
 
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-  <div class="wrap about-grid">
-    <div class="about-photo reveal">
-      <div class="pic"><img src="george.png" alt="Георгий — разработчик ботов, сайтов и приложений"></div>
-    </div>
-    <div class="about-text reveal">
-      <span class="sec-label">обо мне</span>
-      <h2>Приветствую, меня зовут Георгий</h2>
-      <p>Я фрилансер из Карагандинской области: делаю чат-ботов, сайты и мобильные приложения под задачи бизнеса. Работал с разными заказчиками — <b>от небольших локальных компаний до промышленных предприятий</b>.</p>
-      <p>Подход простой — вникаю в задачу, предлагаю решение и довожу его до рабочего результата. Без воды и сложных терминов: только то, что реально приносит пользу вашему делу.</p>
-      <a href="#contacts" class="btn btn-primary">Обсудить задачу →</a>
-    </div>
-  </div>
-</section>
-
-<!-- WHY ME -->
-<section id="why">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="sec-label">почему со мной</span>
-      <h2>Почему вам будет удобно</h2>
-    </div>
-    <div class="grid4">
-      <div class="card why reveal">
-        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg></div>
-        <h3>Понятный язык</h3>
-        <p>Объясняю без терминов. Вы всегда понимаете, за что платите и что получите.</p>
-      </div>
-      <div class="card why reveal">
-        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m7.5 4.2 9 5.2v9.2l-9 5.2-9-5.2V9.4Z" transform="translate(4.5 -1.5)"/><path d="M3 7l9 5 9-5M12 22V12"/></svg></div>
-        <h3>Всё под ключ</h3>
-        <p>Беру на себя весь процесс — от разработки до запуска в интернете. Вам не нужно ни в чём разбираться.</p>
-      </div>
-      <div class="card why reveal">
-        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
-        <h3>Напрямую со мной</h3>
-        <p>Не агентство с наценками и менеджерами — вы работаете напрямую с тем, кто делает.</p>
-      </div>
-      <div class="card why reveal">
-        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg></div>
-        <h3>Не бросаю после сдачи</h3>
-        <p>Остаюсь на связи: помогаю с вопросами, доработками и обновлениями.</p>
-      </div>
     </div>
   </div>
 </section>
@@ -639,23 +572,6 @@
         </div>
       </div>
       <p class="rev-note">отзывы с kwork.ru/user/geoemez</p>
-    </div>
-  </div>
-</section>
-
-<!-- PROCESS -->
-<section id="process">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="sec-label">как это будет</span>
-      <h2>Как мы будем работать</h2>
-      <p>Прозрачно и по шагам — вам не нужно ничего уметь.</p>
-    </div>
-    <div class="proc-grid">
-      <div class="proc reveal"><div class="proc-num">01</div><h4>Расскажете задачу</h4><p>Простыми словами, как умеете. Остальное — вопросы и детали — я беру на себя.</p></div>
-      <div class="proc reveal"><div class="proc-num">02</div><h4>Сделаю и покажу</h4><p>Вы видите результат и говорите, что поправить. Без сюрпризов в конце.</p></div>
-      <div class="proc reveal"><div class="proc-num">03</div><h4>Запущу в работу</h4><p>Размещу в интернете, подключу домен — всё готово к работе с клиентами.</p></div>
-      <div class="proc reveal"><div class="proc-num">04</div><h4>Останусь на связи</h4><p>Помогу с вопросами и доработками после запуска.</p></div>
     </div>
   </div>
 </section>
